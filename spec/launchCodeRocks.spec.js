@@ -27,7 +27,10 @@ describe("launchOutput", function(){
       assert.strictEqual(launchOutput(10), 'Launch Rocks! (CRASH!!!!)');
   });
 
-  it("checks if number is not divisible by 2, 3, or 5", function(){
+  it("checks if number is divisible by 2, 3, AND 5", function(){
+      assert.strictEqual(launchOutput(30), 'LaunchCode Rocks!');
+  });
+  it("checks if number is NOT divisible by 2, 3, or 5", function(){
       assert.strictEqual(launchOutput(1), 'Rutabagas! That does not work.');
   });
 });

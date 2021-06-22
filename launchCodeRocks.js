@@ -38,13 +38,15 @@ function launchOutput(num){
   return "Code!";
 } else if (num % 5 === 0 && num % 3 !==0 && num % 2 !==0){
   return "Rocks!";
-} else if (num % 2 === 0 && num % 3 === 0) {
+} else if (num % 2 === 0 && num % 3 === 0 && num % 5 !==0) {
   return "LaunchCode!";
-} else if (num % 3 === 0 && num % 5 === 0) {
+} else if (num % 3 === 0 && num % 5 === 0 && num % 2 !==0) {
   return "Code Rocks!";
-} else if (num % 2 === 0 && num % 5 === 0) {
+} else if (num % 2 === 0 && num % 5 === 0 && num % 3 !==0) {
   return "Launch Rocks! (CRASH!!!!)";
-} else //if (num % 2 !== 0 && num % 3 !== 0 & num % 5 !== 0)
+} else if (num % 2 === 0 && num % 3 === 0 && num % 5 === 0) {
+  return "LaunchCode Rocks!";
+} else
 return "Rutabagas! That does not work."; 
 }
 
